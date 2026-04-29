@@ -1,0 +1,130 @@
+<?php
+/*
+ * This file is part of Webisters Debug Library.
+ *
+ * (c) Hafiz Muhammad Moaz <thewebisters@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPSTORM_META;
+
+registerArgumentsSet(
+    'eh_env',
+    \Framework\Debug\ExceptionHandler::DEVELOPMENT,
+    \Framework\Debug\ExceptionHandler::PRODUCTION,
+);
+expectedArguments(
+    \Framework\Debug\ExceptionHandler::__construct(),
+    0,
+    argumentsSet('eh_env')
+);
+expectedArguments(
+    \Framework\Debug\ExceptionHandler::setEnvironment(),
+    0,
+    argumentsSet('eh_env')
+);
+expectedReturnValues(
+    \Framework\Debug\ExceptionHandler::getEnvironment(),
+    argumentsSet('eh_env')
+);
+registerArgumentsSet(
+    'input_vars',
+    '$_COOKIE',
+    '$_ENV',
+    '$_FILES',
+    '$_GET',
+    '$_POST',
+    '$_SERVER',
+);
+expectedArguments(
+    \Framework\Debug\ExceptionHandler::validateInputName(),
+    0,
+    argumentsSet('input_vars')
+);
+expectedArguments(
+    \Framework\Debug\ExceptionHandler::isHiddenInput(),
+    0,
+    argumentsSet('input_vars')
+);
+expectedArguments(
+    \Framework\Debug\ExceptionHandler::setHiddenInputs(),
+    0,
+    argumentsSet('input_vars')
+);
+expectedArguments(
+    \Framework\Debug\ExceptionHandler::setHiddenInputs(),
+    1,
+    argumentsSet('input_vars')
+);
+expectedArguments(
+    \Framework\Debug\ExceptionHandler::addHiddenInputs(),
+    0,
+    argumentsSet('input_vars')
+);
+expectedArguments(
+    \Framework\Debug\ExceptionHandler::addHiddenInputs(),
+    1,
+    argumentsSet('input_vars')
+);
+expectedArguments(
+    \Framework\Debug\ExceptionHandler::removeHiddenInputs(),
+    0,
+    argumentsSet('input_vars')
+);
+expectedArguments(
+    \Framework\Debug\ExceptionHandler::removeHiddenInputs(),
+    1,
+    argumentsSet('input_vars')
+);
+registerArgumentsSet(
+    'search_engines',
+    'ask',
+    'baidu',
+    'bing',
+    'duckduckgo',
+    'google',
+    'yahoo',
+    'yandex',
+);
+expectedArguments(
+    \Framework\Debug\SearchEngines::__construct(),
+    0,
+    argumentsSet('search_engines')
+);
+expectedArguments(
+    \Framework\Debug\SearchEngines::add(),
+    0,
+    argumentsSet('search_engines')
+);
+expectedArguments(
+    \Framework\Debug\SearchEngines::getUrl(),
+    0,
+    argumentsSet('search_engines')
+);
+expectedArguments(
+    \Framework\Debug\SearchEngines::setCurrent(),
+    0,
+    argumentsSet('search_engines')
+);
+expectedArguments(
+    \Framework\Debug\SearchEngines::makeLink(),
+    1,
+    argumentsSet('search_engines')
+);
+registerArgumentsSet(
+    'debugger_options',
+    'color',
+    'icon_path',
+    'info_contents',
+);
+expectedArguments(
+    \Framework\Debug\Debugger::getOption(),
+    0,
+    argumentsSet('debugger_options')
+);
+expectedArguments(
+    \Framework\Debug\Debugger::setOption(),
+    0,
+    argumentsSet('debugger_options')
+);

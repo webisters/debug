@@ -1,0 +1,444 @@
+.webisters-debug {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+    color: #eee;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: normal;
+    line-height: normal;
+    z-index: 9999;
+}
+
+.webisters-debug *,
+.webisters-debug ::after,
+.webisters-debug ::before {
+    box-sizing: unset;
+}
+
+.webisters-debug h1,
+.webisters-debug h2,
+.webisters-debug h3,
+.webisters-debug h4,
+.webisters-debug h5,
+.webisters-debug h6 {
+    color: #fff;
+    font-family: inherit;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.webisters-debug h1 {
+    font-size: 32px;
+}
+
+.webisters-debug h2 {
+    font-size: 24px;
+}
+
+.webisters-debug h3 {
+    font-size: 19px;
+}
+
+.webisters-debug h4 {
+    font-size: 16px;
+}
+
+.webisters-debug h5 {
+    font-size: 13px;
+}
+
+.webisters-debug h6 {
+    font-size: 11px;
+}
+
+.webisters-debug a {
+    color: magenta;
+    text-decoration: none;
+}
+
+.webisters-debug p {
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.webisters-debug hr {
+    background: #222;
+    border: 0;
+    height: 1px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+.webisters-debug pre {
+    background: #000;
+    color: #eee;
+    padding: 16px;
+    margin: 0;
+    overflow: auto;
+    border: 1px solid #222;
+    border-radius: 4px;
+}
+
+.webisters-debug code {
+    background: #000;
+    border: 0;
+    font-family: 'JetBrains Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.webisters-debug :not(td) > pre {
+    margin-bottom: 10px !important;
+}
+
+.webisters-debug :not(pre) > code {
+    background: #222;
+    color: inherit;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.webisters-debug button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: normal;
+    border-radius: 4px;
+    padding: 4px 8px;
+    height: 26px;
+    line-height: 16px;
+    margin: 0;
+    text-transform: none;
+}
+
+.webisters-debug button:hover {
+    background-color: #eee;
+    color: #000;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+.webisters-debug button.active {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
+}
+
+.webisters-debug img {
+    background: inherit;
+    border: 0;
+}
+
+.webisters-debug select {
+    appearance: auto;
+    background: none;
+    color: #fff;
+    border: 1px solid #222;
+    border-radius: 0;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 3px 5px;
+    height: 16px;
+    width: auto;
+    line-height: 16px;
+    margin: auto;
+}
+
+.webisters-debug select:hover {
+    cursor: pointer;
+}
+
+.webisters-debug select:disabled {
+    border-color: #000;
+    color: #666;
+    cursor: default;
+}
+
+.webisters-debug select:focus {
+    background: #111;
+    box-shadow: none;
+    outline: none;
+}
+
+.webisters-debug strong {
+    color: inherit;
+}
+
+.webisters-debug svg {
+    display: inline-block;
+    vertical-align: unset;
+}
+
+.webisters-debug ul {
+    padding-left: 15px;
+}
+
+.webisters-debug .panels {
+    background: #000;
+    position: fixed;
+    bottom: 54px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.webisters-debug .panels .panel {
+    display: none;
+    font-size: 16px;
+    margin: 0;
+}
+
+.webisters-debug .panels .panel .contents {
+    background: transparent;
+    display: block;
+}
+
+.webisters-debug .panels .panel .contents > * {
+    display: none;
+}
+
+.webisters-debug .panels .panel .resize {
+    cursor: ns-resize;
+    width: 100%;
+    height: 2px;
+    background: #222;
+    border-bottom: 2px solid #000;
+}
+
+.webisters-debug table {
+    background: #000;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #eee;
+    width: 100%;
+    text-align: left;
+    table-layout: auto;
+}
+
+.webisters-debug td table {
+    margin: 0;
+}
+
+.webisters-debug table,
+.webisters-debug th,
+.webisters-debug td {
+    border: 1px solid #222;
+}
+
+.webisters-debug td,
+.webisters-debug th {
+    padding: 8px;
+}
+
+.webisters-debug th {
+    color: #fff;
+    background: #000;
+}
+
+.webisters-debug thead th {
+    border-bottom: 2px solid #222;
+}
+
+.webisters-debug tbody,
+.webisters-debug tbody tr {
+    background: transparent;
+}
+
+.webisters-debug tbody th {
+    border-right: 2px solid #222;
+}
+
+.webisters-debug tbody td table thead th {
+    border-right-width: 1px;
+}
+
+.webisters-debug tr:hover {
+    background: #111;
+}
+
+.webisters-debug tr.active {
+    background: #333;
+}
+
+.webisters-debug .panels header {
+    background-color: #000;
+    border-bottom: 1px solid #222;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 10px 2px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.webisters-debug .panels header .title {
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    font-size: inherit;
+    margin: 0;
+}
+
+.webisters-debug .panels header .actions {
+    margin-left: auto;
+}
+
+.webisters-debug .panels header .collectors {
+    margin-left: 5px;
+}
+
+.webisters-debug .panels .contents {
+    height: 250px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.webisters-debug .panels .contents a:hover {
+    text-decoration: underline;
+}
+
+.webisters-debug .panels .contents button {
+    border-color: #222;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.webisters-debug .panels .contents button:hover {
+    border-color: #fff;
+}
+
+.webisters-debug .toolbar {
+    background-color: #000;
+    border-top: 1px solid #222;
+    border-right: 1px solid #222;
+    box-shadow: rgba(255, 255, 255, .25) 0 2px 5px 0;
+    height: 54px;
+    line-height: 0;
+    padding: 0 8px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+.webisters-debug .toolbar .icon {
+    display: inline;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+}
+
+.webisters-debug .toolbar .collections {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.webisters-debug .toolbar .collections .collection {
+    margin-left: 5px;
+}
+
+.webisters-debug .collection-icon.badge-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    border-radius: 999px;
+    background: #0052FF;
+    color: #dbe6ff;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.webisters-debug .webisters-link {
+    color: inherit;
+}
+
+.webisters-debug .toolbar .collections .info {
+    margin-left: auto;
+}
+
+.webisters-debug .info-collection table th:last-of-type,
+.webisters-debug .info-collection table td:last-of-type {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 8px 0;
+    width: 50%
+}
+
+.webisters-debug .info-collection table th span {
+    float: left;
+    text-align: right;
+    width: 10%;
+}
+
+.webisters-debug .info-collection table td span {
+    background: magenta;
+    display: block;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.webisters-debug .info-collection table td:last-of-type {
+    background: repeating-linear-gradient(
+        to right,
+        #111,
+        #111 10%,
+        #000 10%,
+        #000 20%
+    );
+}
+
+.webisters-debug .info-collection table tr:hover td:last-of-type {
+    background: repeating-linear-gradient(
+        to right,
+        #222,
+        #222 10%,
+        #111 10%,
+        #111 20%
+    );
+}
+
+.webisters-debug .debugbar-icon {
+    width: 12px;
+}
+
+.webisters-debug .title .debugbar-icon {
+    width: 14px;
+}
+
+.webisters-debug .text-success {
+    color: green;
+}
+
+.webisters-debug .text-error {
+    color: red;
+}
+
+.webisters-debug.inverted {
+    filter: invert(1);
+}
+
+/*
+ * Bootstrap 5 Breakpoint
+ * `md` applies to small devices (landscape phones, less than 768px)
+ */
+@media (max-width: 767.98px) {
+    .webisters-debug .toolbar .collections .collection .collection-name {
+        display: none;
+    }
+}
