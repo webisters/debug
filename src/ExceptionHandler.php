@@ -29,11 +29,11 @@ class ExceptionHandler
     /**
      * Development environment.
      */
-    public const string DEVELOPMENT = 'development';
+    public const DEVELOPMENT = 'development';
     /**
      * Production environment.
      */
-    public const string PRODUCTION = 'production';
+    public const PRODUCTION = 'production';
     protected string $developmentView = __DIR__ . '/Views/exceptions/development.php';
     protected string $productionView = __DIR__ . '/Views/exceptions/production.php';
     protected ?Logger $logger = null;
