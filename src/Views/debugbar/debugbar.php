@@ -34,7 +34,7 @@ $badgeMap = [
 $renderBadgeIcon = static function (string $safeName, string $label) use ($badgeMap) : string {
     $letter = $badgeMap[$safeName] ?? strtoupper(substr($label, 0, 1));
     return '<span class="collection-icon badge-icon" aria-hidden="true">'
-        . htmlentities($letter, ENT_QUOTES | ENT_HTML5)
+        . htmlentities($letter, \ENT_QUOTES | \ENT_HTML5)
         . '</span>';
 };
 ?>
