@@ -240,7 +240,7 @@ final class DebuggerTest extends TestCase
 
     public function testIconPathOption() : void
     {
-        $iconPath = __DIR__ . '/../guide/image.png';
+        $iconPath = __DIR__ . '/../src/Views/exceptions/favicons/development.png';
         $this->debugger->setOption('icon_path', $iconPath);
         self::assertStringContainsString(
             \base64_encode((string) \file_get_contents($iconPath)),
